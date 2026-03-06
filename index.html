@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <h2>Dashboard</h2>
+        <ul>
+          <li>TOTAL TASK</li>
+          <li>COMPLETED</li>
+          <li>PENDING</li>
+          <li>RECENT ACTIVITY</li>
+          <li>SETTINGS</li>
+        </ul>
+
+        <div class="progress">
+          <p>Progress: 50%</p>
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: 50%"></div>
+          </div>
+        </div>
+        <div class="quote">
+          <p>"The secret of getting ahead is getting started. – Mark Twain"</p>
+        </div>
+      </div>
+
+      <!-- Main content (todo card) -->
+      <div class="main-content">
+        <div class="todo-container">
+          <h1>MY DAILY TASK</h1>
+
+          <div class="input-section">
+            <input type="text" placeholder="enter your text" />
+            <button class="add-more"><i class="fa-solid fa-plus"></i></button>
+          </div>
+          <div class="filter-buttons">
+            <button class="all">All</button>
+            <button class="completed">Completed</button>
+            <button class="pending">Pending</button>
+          </div>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="task-text">Learn HTML</span>
+              </label>
+              <button class="edit"><i class="fa-solid fa-pen"></i></button>
+              <button class="delete"><i class="fa-solid fa-trash"></i></button>
+            </li>
+
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="task-text">Learn JS</span>
+              </label>
+              <button class="edit"><i class="fa-solid fa-pen"></i></button>
+              <button class="delete"><i class="fa-solid fa-trash"></i></button>
+            </li>
+
+            <li>
+              <label>
+                <input type="checkbox" />
+                <span class="task-text">Learn CSS</span>
+              </label>
+              <button class="edit"><i class="fa-solid fa-pen"></i></button>
+              <button class="delete"><i class="fa-solid fa-trash"></i></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
